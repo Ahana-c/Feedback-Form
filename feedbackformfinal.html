@@ -1,0 +1,190 @@
+<html><head><title>Project</title>
+    <link rel="stylesheet" href="feedback.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alkalami&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1>Mess Feedback Form</h1>
+    <form action="{{url_for(feedback)}}" method="post">
+        <label for="name">Name:</label>
+        <input type="text" name="name">
+        <label for="room">Room No:</label>
+        <input type="text" name="room">
+        <label for="hostel">Hostel Block:</label>
+        <input type="text" name="hostel">
+        <label for="mess">Mess Type:</label>
+        <input type="text" name="mess"><br>
+      <div id="quality">
+        <p>1)Quality of Food</p>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+              Need to Improve
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+            <label class="form-check-label" for="flexRadioDefault2">
+              Average
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+            <label class="form-check-label" for="flexRadioDefault3">
+              Good
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
+            <label class="form-check-label" for="flexRadioDefault4">
+              Very Good
+            </label>
+          </div>
+        </div>
+        <div id="quantity">
+        <p>2)Quantity of Food</p>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefaul" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+              Need to Improve
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefaul" id="flexRadioDefault2">
+            <label class="form-check-label" for="flexRadioDefault2">
+              Average
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefaul" id="flexRadioDefault3">
+            <label class="form-check-label" for="flexRadioDefault3">
+              Good
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefaul" id="flexRadioDefault4">
+            <label class="form-check-label" for="flexRadioDefault4">
+              Very Good
+            </label>
+          </div>
+        </div>
+        <div id="service">
+        <p>3)Service Efficiency</p>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefau" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+              Need to Improve
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefau" id="flexRadioDefault2">
+            <label class="form-check-label" for="flexRadioDefault2">
+              Average
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefau" id="flexRadioDefault3">
+            <label class="form-check-label" for="flexRadioDefault3">
+              Good
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefau" id="flexRadioDefault4">
+            <label class="form-check-label" for="flexRadioDefault4">
+              Very Good
+            </label>
+          </div>
+        </div>
+        <div id="variety">
+        <p>4)Variety of Food</p>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefa" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+              Need to Improve
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefa" id="flexRadioDefault2">
+            <label class="form-check-label" for="flexRadioDefault2">
+              Average
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefa" id="flexRadioDefault3">
+            <label class="form-check-label" for="flexRadioDefault3">
+              Good
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefa" id="flexRadioDefault4" >
+            <label class="form-check-label" for="flexRadioDefault4">
+              Very Good
+            </label>
+          </div>
+        </div>
+        <div id="friendliness">
+        <p>5)Friendliness of Caterers</p>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDef" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+              Need to Improve
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDef" id="flexRadioDefault2">
+            <label class="form-check-label" for="flexRadioDefault2">
+              Average
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDef" id="flexRadioDefault3">
+            <label class="form-check-label" for="flexRadioDefault3">
+              Good
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDef" id="flexRadioDefault4" >
+            <label class="form-check-label" for="flexRadioDefault4">
+              Very Good
+            </label>
+          </div>
+        </div>
+        <div id="sanitation">
+        <p>6)Sanitation of the mess</p>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDe" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+              Need to Improve
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDe" id="flexRadioDefault2">
+            <label class="form-check-label" for="flexRadioDefault2">
+              Average
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDe" id="flexRadioDefault3">
+            <label class="form-check-label" for="flexRadioDefault3">
+              Good
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDe" id="flexRadioDefault4" >
+            <label class="form-check-label" for="flexRadioDefault4">
+              Very Good
+            </label>
+          </div>
+        </div><br>
+          <div class="mb-3" id="comments">
+            <label for="exampleFormControlTextarea1" class="form-label">Additional Comments</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+
+    <input type="submit" name="submit" id="sub">  
+    </form>
+
+</body>
+</html>
